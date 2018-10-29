@@ -1,0 +1,117 @@
+body
+{
+	margin:0px;
+	left: 10%;
+	right: 10%;
+	width:80%;
+	position:relative;
+}
+#logo
+{
+	float:left;
+}
+.corp
+{
+	background-color:rgb(244,245,247);
+}
+
+header,nav,footer
+{
+	background-color:rgb(223,230,238);
+
+}
+header h1
+{
+	font-size:100px;
+	padding: 0px; 
+	margin: 0px;
+	
+}
+
+header p
+{
+	position:relative;
+}
+
+nav,footer {
+    float: left;
+    
+    position: relative;
+	clear:both;
+	display:inline;
+	padding-bottom:15px;
+}
+
+ ul { 
+	list-style-type: none; 
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+ul li {
+	display: block;
+	float: left;
+	padding: 0px 10px;
+	margin: 0px;
+	font-size:20px;
+	
+	
+}
+
+ div
+{
+	/*padding: 15px; 
+	margin: 15px;*/
+
+	position: relative;	
+	clear:both;
+	text-align:justify;
+}
+p
+{
+	font-size: 1.3em;
+}
+
+img[Title*="deskgram.net"]
+{
+	float:right;
+	margin-left:10px;
+}
+a
+{
+text-decoration:none;	
+color:green;
+font-weight:bold;
+}
+a:hover 
+{
+text-decoration: underline;
+}
+a:visited 
+{
+color: green; 
+}
+@media all and (max-width: 1210px)
+{
+.big_img
+{
+display: none;
+}
+ul li {
+	display: block;
+	float: none;
+	padding: 0px 10px;
+	margin: 0px;
+	font-size:20px;
+	
+	
+}
+header h1
+{
+	font-size:50px;
+	padding: 0px; 
+	margin: 0px;
+	
+}
+}
