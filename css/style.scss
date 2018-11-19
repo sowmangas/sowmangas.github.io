@@ -1,0 +1,84 @@
+// Déclaration su Siing utilisé pour le titre en corps du site
+$title-font-size:70px;
+
+//Création du mixin réutilisé dans le code pour l'espace interne et externe des éléments.
+@mixin mar_pad_null($top ) {
+	padding:0px $top;
+	margin:0px;
+}
+body{
+	margin:0px;
+	left: 10%;
+	right: 10%;
+	width:80%;
+	position:relative;
+}
+#logo{
+	float:left;
+}
+.corp{
+	background-color:rgb(244,245,247);
+}
+header{
+	background-color:rgb(223,230,238);
+	
+	h1	{
+		font-size:$title-font-size;
+		@include mar_pad_null($top: 0px);
+	}
+	p
+	{
+		position:relative;
+	}
+}
+nav,footer {
+    float: left;
+    position: relative;
+	clear:both;
+	display:inline;
+	padding-bottom:15px;
+	background-color:rgb(223,230,238);
+}
+ ul { 
+	list-style-type: none; 
+	position: relative;
+	@include mar_pad_null($top: 0px);
+
+	li {
+		display: block;
+		float: left;
+		@include mar_pad_null($top: 10px);
+		font-size:20px;
+	}	
+}
+div{
+	position: relative;	
+	clear:both;
+	text-align:justify;
+}
+p{
+	font-size: 1.3em;
+}
+/*Mise en float à droit de l'image panoramique du site.*/
+img[Title*="deskgram.net"]{
+	float:right;
+	margin-left:10px;
+}
+a{
+	text-decoration:none;	
+	color:green;
+	font-weight:bold;
+    // Utilisation du selecteur parent $
+	/*au survole des liens*/
+	&:hover 	
+	{
+	text-decoration: underline;
+	}
+	/*Pour les liens deja visités raméner la couleur par defaut*/
+	&:visited 
+	{
+	color: green; 
+	}
+}
+/* Importation du partial contenant le média query, ce média query sera affiché tout bas*/
+@import "parial_media_query.scss";

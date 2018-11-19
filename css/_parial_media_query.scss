@@ -1,0 +1,20 @@
+@media all and (max-width: 1210px)
+{
+	.big_img
+	{
+	display: none;
+	}
+	ul li {
+		display: block;
+		float: none;
+		@include mar_pad_null($top: 10px);
+		font-size:20px;
+		
+		
+	}
+	header h1
+	{
+		font-size:$title-font-size/2;
+		@include mar_pad_null($top: 0px);	
+	}
+}
